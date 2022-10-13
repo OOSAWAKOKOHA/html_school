@@ -26,21 +26,28 @@
 
 <body>
   <header>
-    <h1>EC Company</h1>
+    <h1><a href="#">EC Company</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#">top</a></li>
+        <li><a href="#">news</a></li>
+        <li><a href="#">service</a></li>
+        <li><a href="#">blog</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">outline</a></li>
+      </ul>
+      <a href="#">
+        <div>
+          お問い合わせ
+        </div>
+        <!-- <input type="button">
+        <button type="submit">ラベル名必須</button> 
+        外側をaにすれば全部がリンクに!!-->
+      </a>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#">top</a></li>
-      <li><a href="#">news</a></li>
-      <li><a href="#">service</a></li>
-      <li><a href="#">blog</a></li>
-      <li><a href="#">about</a></li>
-      <li><a href="#">outline</a></li>
-    </ul>
-  </nav>
 
-  <p><a href="#">お問い合わせ</a></p>
 
   <section>
     <main>
@@ -58,8 +65,8 @@
       <li>
         <article>
           <a href="#">
+            <time datetime="2100-06-01">2100.6.1</time>
             <header>
-              <time datetime="2100-06-01">2100.6.1</time>
               <h3>【セミナー】TechWebEventに出演・講演することになりました。</h3>
             </header>
           </a>
@@ -68,8 +75,8 @@
       <li>
         <article>
           <a href="#">
+            <time datetime="2100-05-14">2100.5.14</time>
             <header>
-              <time datetime="2100-05-14">2100.5.14</time>
               <h3>【制作事例】ECC comp.のWebサイトリニューアルを担当しました。</h3>
             </header>
           </a>
@@ -78,8 +85,8 @@
       <li>
         <article>
           <a href="#">
+            <time datetime="2100-05-05">2100.5.5</time>
             <header>
-              <time datetime="2100-05-05">2100.5.5</time>
               <h3>【制作事例】こどもの日向けイベント「鯉のぼりサイズのたい焼き」キャンペーンサイト公開しました。</h3>
             </header>
           </a>
@@ -87,7 +94,9 @@
       </li>
       </article>
     </ul>
-    <p><a href="#">過去のnewsを見る</a></p>
+    <div>
+      <a href="#">過去のnewsを見る</a>
+    </div>
   </section>
 
   <section>
@@ -105,9 +114,7 @@
       <h3>ウェアラブル・アプリ開発</h3>
       <p>Webサイトと合わせて、ウェアラブル端末やアプリ開発なども同時開発が可能です。 弊社では、すべての外国語が話せるファビオ・サカティが多言語での開発実装を可能にしています。</p>
     </section>
-    <div>
-      <a href="#">制作事例はこちら</a>
-    </div>
+    <p><a href="#">制作事例はこちら</a></p>
   </section>
 
   <section>
@@ -117,7 +124,7 @@
         <article>
           <a href="#">
             <time datetime="2100-03-02">2100.3.2</time>
-              
+            <header>
               <h3>Pepper（16代目）の暴走を止めるデバッグ処理について</h3>
             </header>
           </a>
@@ -144,9 +151,7 @@
         </article>
       </li>
     </ul>
-    <div>
-      <a href="#">過去のblogを見る</a>
-    </div>
+    <p><a href="#">過去のblogを見る</a></p>
   </section>
 
   <section>
@@ -161,32 +166,37 @@
 
   <section>
     <h2>outline</h2>
-    <p>
-      会社概要
-    </p>
-    <dl>
-      <dt>
-        所在地
-      </dt>
-      <dd>
-        <address>〒530-0015 大阪市北区中崎西2丁目3番35号</address>
-      </dd>
-      <dt>
-        電話番号
-      </dt>
-      <dd>
-        0120-144-144
-      </dd>
-    </dl>
+    <section>
+      <h3>会社概要</h3>
+      <dl>
+        <dt>
+          所在地
+        </dt>
+        <dd>
+          <address>〒530-0015 大阪市北区中崎西2丁目3番35号</address>
+        </dd>
+        <dt>
+          電話番号
+        </dt>
+        <dd>
+          0120-144-144
+        </dd>
+      </dl>
+    </section>
   </section>
 
   <aside>
     <h2>adsense</h2>
-    <img src="img/01_ad_img.jpg" alt="広告画像">
+    <p>
+      <img src="img/01_ad_img.jpg" alt="広告画像">
+    </p>
+    <!-- <p></p> -> 文章的な意味
+    <figure><figcaption></figcaption></figure> -> 挿絵やグラフ、説明ある場合figcaption
+    <picture></picture> -> 上二つ以外 -->
   </aside>
 
-  <section>
-    <h2>EC Company</h2>
+  <footer>
+    <p>EC Company</p>
     <nav>
       <ul>
         <li><a href="#">top</a></li>
@@ -198,10 +208,10 @@
       </ul>
     </nav>
 
-    <footer>
-      <p><small>copyright &copy; comp ecccomp.Inc</small></p>
-    </footer>
-  </section>
+    <p>
+      <small>copyright &copy; comp ecccomp.Inc</small>
+    </p>
+  </footer>
 
 
 
