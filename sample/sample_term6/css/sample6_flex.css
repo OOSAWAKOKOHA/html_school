@@ -1,0 +1,67 @@
+/*
+case1. flexの設定
+flexBoxWrapクラスにflexコンテナの設定を行う
+*/
+
+.sample6_1 .flexBox{
+  padding: 20px;
+  font-size: 1.6em;
+}
+.sample6_1 .flexBoxWrap{
+
+}
+
+
+/*
+case2. flexの配置設定
+設定したflexコンテナの配置方法を変更する
+*/
+
+.sample6_2 .flexBox{
+  padding: 20px;
+  font-size: 1.6em;
+}
+.sample6_2 .flexBoxWrap{
+  height: 300px;
+  border: solid 1px #333;
+
+}
+
+
+/*
+case3. flexの折返し設定
+設定したflexコンテナの折返し設定を行う
+*/
+
+.sample6_3 .flexBox{
+  padding: 20px;
+  font-size: 1.6em;
+  width: 300px;
+}
+.sample6_3 .flexBoxWrap{
+  display: flex;
+
+}
+
+
+/*
+case4. flexアイテムの設定
+flexアイテム（子）に対して設定を行う
+*/
+
+.sample6_4 .flexBoxWrap{
+  display: flex;
+  height: 300px;
+
+}
+.sample6_4 .flexBox{
+  padding: 20px;
+  font-size: 1.6em;
+
+}
+.sample6_4 .flexBox:first-child{
+
+}
+.sample6_4 .flexBox:last-child{
+
+}

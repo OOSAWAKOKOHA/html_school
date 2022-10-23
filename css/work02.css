@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+body{
+  font-family: "ヒラギノ角ゴシック",sans-serif;
+}
+
+header{
+  color: #FFF;
+  background-color: #333;
+}
+
+h1{
+  font-size: 17px;
+  padding: 9px;
+}
+
+a:link,a:visited,a:hover{
+  text-decoration: none;
+}
+
+nav{
+  width: 1000px;
+  height: 35px;
+  font-size: 10px;
+  
+}
+nav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav li{
+  display: inline-blocks;
+}
+
+.home{
+  background-color: #FF6347;
+}
+
+.home:hover{
+  background-color: #DD5C30;
+}
+
+
+.office{
+  border: solid 1px tomato;
+}
+
+nav .office a:hover{
+  color: #FFF;
+  background-color: #333;
+}
+nav .office:hover>.office_menu{
+  display: block;
+  color: #FFF;
+  background-color: #333;
+}
+
+.office_menu{
+  display: none;
+}
+
+.office_menu:hover>li:hover{
+  color: #333;
+  background-color: #F2F2F2;
+}
+
+
+.about{
+  border: solid 1px tomato;
+}
+
+nav .about:hover>.about_menu{
+  display: block;
+}
+
+.about_menu{
+  display: none;
+}
+
+.about_menu>li{
+  color: #FFF;
+  background-color: #333;
+}
+
+.about_menu:hover>li:hover{
+  color: #333;
+  background-color: #F2F2F2;
+}
+
+.recruit{
+  border: solid 1px tomato;
+}
+
+nav .recruit:hover>.recruit_menu{
+  display: block;
+}
+
+.recruit_menu{
+  display: none;
+}
+
+.recruit_menu>li{
+  color: #FFF;
+  background-color: #333;
+}
+
+.recruit_menu:hover>li:hover{
+  color: #333;
+  background-color: #F2F2F2;
+}
+
+.contact{
+  border: solid 1px tomato;
+}
+
+nav .contact:hover>.contact_menu{
+  display: block;
+}
+
+.contact_menu{
+  display: none;
+}
+
+.contact_menu>li{
+  color: #FFF;
+  background-color: #333;
+}
+
+.contact_menu:hover>li:hover{
+  color: #333;
+  background-color: #F2F2F2;
+}
+
+p{
+  text-align: center;
+}

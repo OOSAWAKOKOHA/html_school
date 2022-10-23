@@ -1,0 +1,65 @@
+/*
+case1.opacity
+画像に対して不透明度の設定を行う。
+*/
+.sample4_1{
+  background: #333;
+}
+
+.sample4_1>p{
+}
+
+/*
+case2.background-image
+1つの要素に対して複数の画像の設定を行う。
+複数の画像を設置する場合、各画像に対して
+位置指定なども行う事に注意
+*/
+
+.sample4_2 .imgWrap{
+  width: 230px;
+  height: 230px;
+  margin: 20px auto;
+}
+
+/*
+case3.background-size
+背景画像のサイズを変更する。
+*/
+.sample4_3{
+
+}
+
+/*
+case4.box-shadow / text-shadow
+ドロップシャドウの設定。
+文字と要素でプロパティ名が違うので注意
+*/
+.sample4_4 .shadowWrap{
+  padding: 20px;
+
+}
+.sample4_4 h3{
+  font-size: 1.8rem;
+
+}
+
+/*
+case5.border-radius
+ボーダーのエッジの設定（角丸）
+*/
+.sample4_5 .radiusWrap{
+  width: 250px;
+  height: 250px;
+}
+.sample4_5 img{
+
+}
+
+/*
+case6.linear-gradient
+グラデーションの設定
+*/
+.sample4_6{
+  
+}

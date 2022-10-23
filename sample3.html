@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content="ここに説明文を設定"/>
+    <title>sample3 - セレクタ</title>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@twitteraccount"/>
+    <meta property="og:site_name" content="サイト名"/>
+    <meta property="og:title" content="サイトタイトル"/>
+    <meta property="og:description" content="サイト説明文"/>
+    <meta property="og:url" content="https://hoge.ecc.com/"/>
+    <meta property="og:image" content="https://hoge.ecc.com/ogp.png"/>
+    <meta property="og:type" content="website"/>
+    <link rel="stylesheet" href="css/sample3.css"/>
+    <link rel="stylesheet" href="css/sample3_selector.css">
+  </head>
+  <body>
+    <header>
+      <h1>Selector list</h1>
+    </header>
+    <main>
+      <div class="sample3_1 box">
+        <section>
+          <h2>case1.子セレクタ</h2>
+          <p>タイトルの子要素</p>
+          <div>
+            <p>タイトルの孫要素の説明文</p>
+            <p>タイトルの孫要素の説明文</p>
+          </div>
+        </section>
+      </div>
+      <div class="sample3_2 box">
+        <section>
+          <h2>case2.隣接セレクタ</h2>
+          <p>タイトル直下のテキスト</p>
+          <p>説明文の段落です説明文の段落です説明文の段落です</p>
+          <p>説明文の段落です説明文の段落です説明文の段落です</p>
+          <h2>case2.隣接セレクタ</h2>
+          <p>タイトル直下のテキスト</p>
+        </section>
+      </div>
+      <div class="sample3_3 box">
+        <section>
+          <h2>case3.間接セレクタ</h2>
+          <p>タイトル直下のテキスト</p>
+          <p>説明文の段落です説明文の段落です説明文の段落です</p>
+          <p>説明文の段落です説明文の段落です説明文の段落です</p>
+          <h3>小見出し</h3>
+          <p>説明文の段落です説明文の段落です説明文の段落です</p>
+        </section>
+      </div>
+      <div class="sample3_4 box">
+        <section>
+          <h2>case4.属性セレクタ</h2>
+          <input type="text" value="aaa"/>
+          <input type="button" value="btn"/>
+          <h3>LinkList</h3>
+          <p><a href="#top">ページ内リンク</a></p>
+          <p><a href="#home">ページ内リンク</a></p>
+          <p><a href="http">ページ内リンク</a></p>
+        </section>
+      </div>
+      <div class="sample3_5 box">
+        <h2>case5.擬似クラス最初/最後の要素</h2>
+        <ul>
+          <li>list項目1</li>
+          <li>list項目2</li>
+          <li>list項目3</li>
+        </ul>
+        <ol>
+          <li>list項目1</li>
+          <li>list項目2</li>
+          <li>list項目3</li>
+        </ol>
+      </div>
+      <div class="sample3_6 box">
+        <h2>case6.an+b番目の要素 偶数奇数で表示</h2>
+        <ul>
+          <li>list項目1</li>
+          <li>list項目2</li>
+          <li>list項目3</li>
+          <li>list項目4</li>
+          <li>list項目5</li>
+          <li>list項目6 </li>
+        </ul>
+      </div>
+      <div class="sample3_7 box">
+        <h2>case7.チャレンジ 3パターンで表示</h2>
+        <ul>
+          <li>list項目1</li>
+          <li>list項目2</li>
+          <li>list項目3</li>
+          <li>list項目4</li>
+          <li>list項目5</li>
+          <li>list項目6 </li>
+        </ul>
+      </div>
+      <div class="sample3_8 box">
+        <h2>case8.an+b番目の要素 その2</h2>
+        <h3>サイト箇所まとめ</h3>
+        <p>サムネイル</p>
+        <p>広告バナー</p>
+        <p>ヘッダー</p>
+        <h4>ヘッダー箇所まとめ        </h4>
+        <p>グローバルナビ</p>
+        <p>ロゴ</p>
+        <p>問い合わせ</p>
+      </div>
+    </main>
+    <footer>
+      <p><small>copyright &copy; comp ecccomp.Inc</small></p>
+    </footer>
+  </body>
+</html>

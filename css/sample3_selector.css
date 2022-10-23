@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+
+
+.sample3_1 section>p{
+  color: tomato;
+}
+.sample3_1 section:hover>p{
+  color: skyblue;
+}
+
+.sample3_2 h2 + p{
+  color: pink;
+}
+
+.sample3_3 h2 ~ p{
+  color: green;
+}
+
+.sample3_4 input[type="text"]{
+  border: solid 1px tomato;
+}
+.sample3_4 a[href^="#"]{
+  border: solid 1px tomato;
+}
+
+.sample3_5 ul>li:first-child{
+  color: red;
+}
+.sample3_5 ul>li:last-child{
+  color: blue;
+}
+
+.sample3_6 li:nth-child(even){
+  color: greenyellow;
+}
+.sample3_6 li:nth-child(odd){
+  color: green;
+}
+
+.sample3_7 li:nth-child(3n){
+  color: aqua;
+}
+.sample3_7 li:nth-child(3n+1){
+  color: red;
+}
+.sample3_7 li:nth-child(3n+2){
+  color: green;
+}
+
+.sample3_8 p:nth-of-type(even){
+  color: brown;
+}
+.sample3_8 p:nth-of-type(odd){
+  color: darkcyan;
+}

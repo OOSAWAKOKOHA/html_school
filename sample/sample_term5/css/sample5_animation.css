@@ -1,0 +1,152 @@
+/*
+sample5 - animation
+CSSで設定するアニメーション方法をサンプルファイルを通じて
+学習しましょう。
+*/
+
+
+/*
+case1. transitionの設定:背景色の変更
+*/
+
+.t1{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  background: #2CCFB1;
+  /*transitonの設定*/
+  
+}
+
+.t1:hover{
+  
+}
+
+/*
+case2. transitionの設定:要素の幅変更
+*/
+
+.t2{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  background: #2CCFB1;
+  /*transitonの設定*/
+  
+}
+.t2:hover{
+  
+}
+
+
+/*
+case3. transitionの設定:delayの幅変更
+*/
+
+.t3{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  background: #2CCFB1;
+  /*transitonの設定*/
+  
+}
+.t3:hover{
+ 
+}
+
+
+/*
+case4. animationの設定
+*/
+
+.a1{
+  display: table-cell;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  background: #2CCFB1;
+  /*animationの設定*/
+
+}
+
+
+/*
+case5. animationの設定
+animation-fill-mode
+animation-direction
+animation-interaction-count
+など設定を追加してみる
+※ 通常はanimationプロパティに一括で指定がベターです。
+*/
+.a2{
+  display: table-cell;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  background: #2CCFB1;
+  /*animationの設定*/
+
+}
+
+
+/*
+case6. animationの設定
+a3クラスを反時計回りに移動させてみましょう
+*/
+
+.a3{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  background: #2CCFB1;
+  position: relative;
+  top:0;
+  left:0;
+  /*animationの設定*/
+
+}
+
+
+
+/*
+case7. コマ送りアニメーション
+a4クラス:hover状態でコマ送りアニメーションを設定する
+*/
+
+.a4{
+  width: 200px;
+  height: 300px;
+  background: url("../img/sample5_anime.jpg") no-repeat;
+  /*animationの設定*/
+
+}
+.a4:hover{
+
+}
+
+
+
+
+
+
+
+

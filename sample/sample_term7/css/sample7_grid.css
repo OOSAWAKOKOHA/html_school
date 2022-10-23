@@ -1,0 +1,62 @@
+.ttl{
+  font-size: 1.4rem;
+  margin: 20px;
+}
+h2.ttl{
+  background: #333;
+  color: #FFF;
+  padding: 10px 20px;
+}
+.wrapFit section,
+.wrapFill section
+{
+  margin: 20px;  
+}
+section{
+  border: solid 1px #333;
+}
+
+/*
+sample7_grid
+4列 4行のグリッドレイアウトの作成
+*/
+
+.wrapGrid{
+  margin: 20px;
+  
+}
+
+#gridA{
+  
+}
+#gridB{
+  
+}
+#gridC{
+  
+}
+#gridD{
+  
+}
+#gridE{
+  
+}
+
+/*
+sample7_grid_2
+autoFit , autoFillを使ったレイアウト
+*/
+
+.wrapFit{
+  margin: 20px;
+  padding: 20px;
+  border: dotted 1px #999;
+  
+}
+
+.wrapFill{
+  margin: 20px;
+  padding: 20px;
+  border: dotted 1px #999;
+
+}

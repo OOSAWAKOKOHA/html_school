@@ -1,0 +1,126 @@
+/*
+sample5 - transform
+CSSで設定する要素の変形等の方法をサンプルファイルを通じて
+学習しましょう。
+*/
+
+
+/*
+case1. transfrom: 基本変形
+*/
+
+.tr1{
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  background: #2CCFB1;
+  /*transformの設定*/
+
+}
+
+/*
+case2. transfrom: transitionとの組み合わせ
+*/
+
+.tr2{
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  background: #2CCFB1;
+
+}
+
+.tr2:hover{
+
+}
+
+/*
+challenge1. transfrom: ちょっとチャレンジ
+組み合わせ次第で色んな変形が可能
+*/
+
+.ch1Photo{
+  margin: 50px;
+  width: 200px;
+  height: 200px;
+  /*
+  モノクロをカラーに変更する
+  */
+
+}
+
+.ch1Photo:hover img{
+
+}
+.ch1 img{
+  width: 100%;
+  border-radius: 100%;
+
+}
+
+
+/*
+challenge2. transfrom: ちょっとチャレンジ
+組み合わせ次第で色んな変形が可能
+*/
+
+.ch2{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  line-height: 75px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  background: #2CCFB1;
+
+}
+
+.transformCh2:hover .ch2{
+
+}
+
+/*
+case3. transfrom: 3D表現
+*/
+
+.trBox{
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  background: #2CCFB1;
+}
+
+.tr3Wrap{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  /* transform-styleの設定 */
+
+}
+.tr3Wrap:hover{
+
+}
+.tr3L{
+  position: absolute;
+
+}
+.tr3R{
+  background: #FF6347;
+  position: absolute;
+  
+}
+
+
+
+
