@@ -13,6 +13,7 @@
   color: pink;
 }
 
+
 .sample3_3 h2 ~ p{
   color: green;
 }
