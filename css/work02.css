@@ -1,136 +1,72 @@
 @charset "UTF-8";
-
-body{
+*{
   font-family: "ヒラギノ角ゴシック",sans-serif;
+  font-weight: bold;
+  box-sizing: inherit;
+}
+
+html{
+	font-size: 62.5%;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 header{
+  width: 100vw;
+  height: 50px;
+  padding: 10px;
   color: #FFF;
   background-color: #333;
 }
 
 h1{
-  font-size: 17px;
-  padding: 9px;
+  font-size: 1.8rem;
+  
 }
 
 a:link,a:visited,a:hover{
   text-decoration: none;
 }
 
-nav{
+#main_nav{
   width: 1000px;
-  height: 35px;
-  font-size: 10px;
-  
-}
-nav ul{
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
+  height: 400px;
+  margin: 200px;
 }
 
-nav li{
-  display: inline-blocks;
+#main_nav ul{
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  list-style: none;
+}
+#main_nav li a{
+  display: block;
+  height: 50px;
+  padding: 10px;
+  color: #FFF;
+  background-color: #333;
+  border-left: dotted 1px #FFF;
+  text-align: center;
+}
+
+#main_nav li ul{
+  display: block;
+}
+#main_nav li ul li{
+  width: 199px;
+  height: 50px;
+  display: none;
+  text-align: center;
 }
 
 .home{
-  background-color: #FF6347;
+  width: 80px;
+  border-left: none;
 }
 
-.home:hover{
-  background-color: #DD5C30;
-}
-
-
-.office{
-  border: solid 1px tomato;
-}
-
-nav .office a:hover{
-  color: #FFF;
-  background-color: #333;
-}
-nav .office:hover>.office_menu{
-  display: block;
-  color: #FFF;
-  background-color: #333;
-}
-
-.office_menu{
-  display: none;
-}
-
-.office_menu:hover>li:hover{
-  color: #333;
-  background-color: #F2F2F2;
-}
-
-
-.about{
-  border: solid 1px tomato;
-}
-
-nav .about:hover>.about_menu{
-  display: block;
-}
-
-.about_menu{
-  display: none;
-}
-
-.about_menu>li{
-  color: #FFF;
-  background-color: #333;
-}
-
-.about_menu:hover>li:hover{
-  color: #333;
-  background-color: #F2F2F2;
-}
-
-.recruit{
-  border: solid 1px tomato;
-}
-
-nav .recruit:hover>.recruit_menu{
-  display: block;
-}
-
-.recruit_menu{
-  display: none;
-}
-
-.recruit_menu>li{
-  color: #FFF;
-  background-color: #333;
-}
-
-.recruit_menu:hover>li:hover{
-  color: #333;
-  background-color: #F2F2F2;
-}
-
-.contact{
-  border: solid 1px tomato;
-}
-
-nav .contact:hover>.contact_menu{
-  display: block;
-}
-
-.contact_menu{
-  display: none;
-}
-
-.contact_menu>li{
-  color: #FFF;
-  background-color: #333;
-}
-
-.contact_menu:hover>li:hover{
-  color: #333;
-  background-color: #F2F2F2;
+.office,.about,.recruit,.contact{
+  width: 199px;
 }
 
 p{
