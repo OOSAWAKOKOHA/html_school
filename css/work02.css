@@ -28,16 +28,21 @@ a:link,a:visited,a:hover{
   text-decoration: none;
 }
 
+
+.home{
+  background-color: #FF6347;
+}
+
 #main_nav{
   width: 1000px;
   height: 400px;
-  margin: 200px;
+  margin-top: 200px;
 }
 
 #main_nav ul{
   display: flex;
   justify-content: center;
-  width: 1000px;
+  width: 100%;
   list-style: none;
 }
 #main_nav li a{
