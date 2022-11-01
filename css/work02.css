@@ -9,6 +9,8 @@ html{
 	font-size: 62.5%;
   box-sizing: border-box;
   list-style: none;
+  width: 100%;
+  height: 100%;
 }
 
 header{
@@ -21,7 +23,6 @@ header{
 
 h1{
   font-size: 1.8rem;
-  
 }
 
 a:link,a:visited,a:hover{
@@ -29,14 +30,10 @@ a:link,a:visited,a:hover{
 }
 
 
-.home{
-  background-color: #FF6347;
-}
-
 #main_nav{
   width: 1000px;
   height: 400px;
-  margin-top: 200px;
+  margin: 200px auto;
 }
 
 #main_nav ul{
@@ -45,7 +42,7 @@ a:link,a:visited,a:hover{
   width: 100%;
   list-style: none;
 }
-#main_nav li a{
+/* #main_nav li a{
   display: block;
   height: 50px;
   padding: 10px;
@@ -53,21 +50,48 @@ a:link,a:visited,a:hover{
   background-color: #333;
   border-left: dotted 1px #FFF;
   text-align: center;
+} */
+
+ul > li > a{
+  display: block;
+  height: 50px;
+  /* padding: 10px; */
+  color: #FFF;
+  background-color: #00152E;
+  border-left: dotted 1px #FFF;
+  text-align: center;
+  padding: 17px 0px;
 }
 
 #main_nav li ul{
   display: block;
 }
-#main_nav li ul li{
+
+li > ul > li{
   width: 199px;
   height: 50px;
   display: none;
   text-align: center;
 }
 
+li > ul > li > a{
+  display: block;
+  background-color: #333;
+}
+
 .home{
   width: 80px;
   border-left: none;
+}
+
+.home > a{
+  background-color: #FF6347;
+}
+
+
+
+.home a:hover{
+  background-color: #DD5C30;
 }
 
 .office,.about,.recruit,.contact{
