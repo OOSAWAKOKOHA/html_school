@@ -36,34 +36,24 @@ a:link,a:visited,a:hover{
   margin: 200px auto;
 }
 
-#main_nav ul{
+ul{
   display: flex;
-  justify-content: center;
   width: 100%;
   list-style: none;
 }
-/* #main_nav li a{
-  display: block;
-  height: 50px;
-  padding: 10px;
-  color: #FFF;
-  background-color: #333;
-  border-left: dotted 1px #FFF;
-  text-align: center;
-} */
 
 ul > li > a{
   display: block;
   height: 50px;
-  /* padding: 10px; */
   color: #FFF;
   background-color: #00152E;
-  border-left: dotted 1px #FFF;
+  border-left: solid 1px #333;
   text-align: center;
   padding: 17px 0px;
 }
 
-#main_nav li ul{
+
+li ul{
   display: block;
 }
 
@@ -74,30 +64,41 @@ li > ul > li{
   text-align: center;
 }
 
-li > ul > li > a{
+nav li:hover > ul > li{
   display: block;
+  border: none;
+}
+
+nav li:hover a{
   background-color: #333;
+  border-bottom: dotted 1px #999;
 }
 
-.home{
+
+li:hover > ul > li:hover > a{
+  background-color: #F2F2F2;
+  border: none;
+  color: #333;
+}
+
+nav .home{
   width: 80px;
-  border-left: none;
 }
 
-.home > a{
+nav .home > a{
   background-color: #FF6347;
+  border: none;
 }
 
-
-
-.home a:hover{
+nav .home a:hover{
   background-color: #DD5C30;
 }
 
-.office,.about,.recruit,.contact{
+nav li{
   width: 199px;
 }
 
 p{
   text-align: center;
 }
+
