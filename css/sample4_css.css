@@ -1,0 +1,99 @@
+/*
+case1.opacity
+画像に対して不透明度の設定を行う。
+*/
+.sample4_1{
+  background: #333;
+}
+
+.sample4_1 p{
+  opacity: 0.5;
+}
+
+/*
+case2.background-image
+1つの要素に対して複数の画像の設定を行う。
+複数の画像を設置する場合、各画像に対して
+位置指定なども行う事に注意
+*/
+
+.sample4_2 .imgWrap{
+  width: 230px;
+  height: 230px;
+  margin: 20px auto;
+  background-image: 
+  url(../img/sample4_background_img.png),
+  url(../img/sample4_background_top.jpg),
+  url(../img/sample4_background_middle.jpg),
+  url(../img/sample4_background_bottom.jpg);
+  background-position: 
+  center center,
+  center top,
+  center center,
+  center bottom;
+}
+
+/*
+case3.background-size
+背景画像のサイズを変更する。
+*/
+.sample4_3{
+  background-image: url(../img/sample4_background_img.png);
+  background-size: contain;
+  background-position: center bottom;
+}
+
+/*
+case4.box-shadow / text-shadow
+ドロップシャドウの設定。
+文字と要素でプロパティ名が違うので注意
+*/
+.sample4_4 .shadowWrap{
+  padding: 20px;
+  border: solid 1px tomato;
+  box-shadow: inset -3px 3px 0 rgba(0,0,0,0.5);
+}
+.sample4_4 h3{
+  font-size: 1.8rem;
+  text-shadow: -3px 3px 6px rgba(0,0,0,0.5);
+}
+
+/*
+case5.border-radius
+ボーダーのエッジの設定（角丸）
+*/
+.sample4_5 .radiusWrap{
+  width: 250px;
+  height: 250px;
+}
+.sample4_5 img{
+  /* border-radius: 20px; */
+  /* 正方形のものだと正円になる */
+  /* border-radius: 50%; */
+  border-radius: 30px 0 0 30px;
+}
+
+/*
+case6.linear-gradient
+グラデーションの設定
+*/
+.sample4_6{
+  position: relative;
+  height: 300px;
+  background: 
+  -webkit-linear-gradient(90deg, rgb(22, 237, 76), rgb(20, 55, 90));
+  background: 
+  linear-gradient(90deg, rgb(22, 237, 76), rgb(20, 55, 90));
+}
+
+.gradientWrap{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border:  solid 1px tomato;
+}
