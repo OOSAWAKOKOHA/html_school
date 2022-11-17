@@ -1,0 +1,80 @@
+/* 画面全体にメインビジュを入れる場合 | %で指定する | vh指定 */
+/* html{
+  height: 100%;
+}
+
+body{
+  border: solid 4px green;
+  height: 100%;
+}
+
+main{
+  height: 100%;
+} */
+
+header{
+  color: #fff;
+  background-color: #333;
+  font-size: 0.55em;
+  padding: 10px;
+  height: 30px;
+}
+
+.mainImg{
+  border: solid 3px tomato;
+  width: 100%;
+  /* height: 600px; 課題は固定なのでこれでもok */
+  /* height: calc(100% - 50px); */
+  height: calc(100vh - 50px);
+
+  background-image: 
+  url(../img/03_bg_overlay.png),
+  linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.5) 0%,
+    rgba(255,255,255,0.2) 100%
+  ),
+  url(../img/03_bg.jpg);
+
+  background-position: left top , left top , center bottom;
+  background-size: 4px 4px , cover , cover;
+  background-repeat: repeat , no-repeat , no-repeat;
+}
+
+.mainImg > h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+
+  /* border: solid 2px skyblue;
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  border-bottom: solid 3px#fff;
+  position: absolute;
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.btn{
+  width: 150px;
+  height: 60px;
+  background-color: cornflowerblue;
+}
+
+.btn > a{
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

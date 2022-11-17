@@ -74,7 +74,6 @@ nav li:hover a{
   border-bottom: dotted 1px #999;
 }
 
-
 li:hover > ul > li:hover > a{
   background-color: #F2F2F2;
   border: none;
