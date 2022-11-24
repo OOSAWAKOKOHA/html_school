@@ -18,7 +18,7 @@ case1. transfrom: 基本変形
   font-weight: bold;
   background: #2CCFB1;
   /*transformの設定*/
-
+  transform: scale(2) rotateZ(45deg);
 }
 
 /*
@@ -33,11 +33,11 @@ case2. transfrom: transitionとの組み合わせ
   color: #FFF;
   font-weight: bold;
   background: #2CCFB1;
-
+  transition: 0.4s;
 }
 
 .tr2:hover{
-
+  transform: scale(2) rotateZ(45deg);
 }
 
 /*
@@ -52,7 +52,9 @@ challenge1. transfrom: ちょっとチャレンジ
   /*
   モノクロをカラーに変更する
   */
-
+  background-image: url(../img/sample5_photo.jpg);
+  background-size: 200px;
+  border-radius: 50%;
 }
 
 .ch1Photo:hover img{
@@ -106,19 +108,21 @@ case3. transfrom: 3D表現
   width: 150px;
   height: 150px;
   /* transform-styleの設定 */
-
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transform-origin: left top;
 }
 .tr3Wrap:hover{
-
+  transform: rotateY(45deg) rotateX(20deg);
 }
 .tr3L{
   position: absolute;
-
+  transform: rotateY(0) translateZ(75px);
 }
 .tr3R{
   background: #FF6347;
   position: absolute;
-  
+  transform: rotateY(90deg) translateZ(75px);
 }
 
 

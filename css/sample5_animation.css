@@ -18,11 +18,13 @@ case1. transitionの設定:背景色の変更
   font-weight: bold;
   background: #2CCFB1;
   /*transitonの設定*/
-  
+  transition: width 1s;
+  /* 初期値はall */
 }
 
 .t1:hover{
-  
+  background-color: tomato;
+  width: 300px;
 }
 
 /*
@@ -38,10 +40,10 @@ case2. transitionの設定:要素の幅変更
   font-weight: bold;
   background: #2CCFB1;
   /*transitonの設定*/
-  
+  transition: 1s cubic-bezier(.12,1.2,.44,1.58);
 }
 .t2:hover{
-  
+  width: 300px;
 }
 
 
@@ -58,10 +60,10 @@ case3. transitionの設定:delayの幅変更
   font-weight: bold;
   background: #2CCFB1;
   /*transitonの設定*/
-  
+  transition: 1s 2s;
 }
 .t3:hover{
- 
+  width: 300px;
 }
 
 
@@ -79,9 +81,17 @@ case4. animationの設定
   font-weight: bold;
   background: #2CCFB1;
   /*animationの設定*/
-
+  animation: 1s 1s boxsize;
 }
 
+@keyframes boxsize {
+  0%{
+    width: 50px;
+  }
+  100%{
+    width: 100px;
+  }
+}
 
 /*
 case5. animationの設定
@@ -101,7 +111,23 @@ animation-interaction-count
   font-weight: bold;
   background: #2CCFB1;
   /*animationの設定*/
+  animation: 1s infinite alternate-reverse boxsize;
+}
 
+@keyframes boxsize {
+  0%{
+    width: 50px;
+  }
+  100%{
+    width: 100px;
+  }
+}
+
+.aaa{
+  animation: 1s infinite alternate-reverse boxsize;
+}
+.bbb{
+  animation: 1s 0.2s infinite alternate-reverse boxsize;
 }
 
 
@@ -122,9 +148,31 @@ a3クラスを反時計回りに移動させてみましょう
   top:0;
   left:0;
   /*animationの設定*/
-
+  animation: 1s infinite rotation;
 }
 
+@keyframes rotation {
+  0%{
+    top: 0;
+    left: 0;
+  }
+  25%{
+    top: 200px;
+    left: 0px;
+  }
+  50%{
+    top: 200px;
+    left: 200px;
+  }
+  75%{
+    top: 0;
+    left: 200px;
+  }
+  100%{
+    top: 0;
+    left: 0;
+  }
+}
 
 
 /*
@@ -137,10 +185,10 @@ a4クラス:hover状態でコマ送りアニメーションを設定する
   height: 300px;
   background: url("../img/sample5_anime.jpg") no-repeat;
   /*animationの設定*/
-
+  transition: 1s steps(5);
 }
 .a4:hover{
-
+  background-position: -800px;
 }
 
 
