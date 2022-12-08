@@ -1,0 +1,92 @@
+/*
+case1. flexの設定
+flexBoxWrapクラスにflexコンテナの設定を行う
+*/
+
+.sample6_1 .flexBox{
+  padding: 20px;
+  font-size: 1.6em;
+}
+.sample6_1 .flexBoxWrap{
+  display: flex;
+  flex-direction: row-reverse;
+  border: solid 2px tomato;
+}
+
+
+/*
+case2. flexの配置設定
+設定したflexコンテナの配置方法を変更する
+*/
+
+.sample6_2 .flexBox{
+  padding: 20px;
+  font-size: 1.6em;
+}
+.sample6_2 .flexBoxWrap{
+  height: 300px;
+  border: solid 1px #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+/*
+case3. flexの折返し設定
+設定したflexコンテナの折返し設定を行う
+*/
+
+.sample6_3 .flexBox{
+  padding: 20px;
+  font-size: 1.6em;
+  width: 500px;
+}
+.sample6_3 .flexBoxWrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/*
+case4. flexアイテムの設定
+flexアイテム（子）に対して設定を行う
+*/
+
+.sample6_4 .flexBoxWrap{
+  display: flex;
+  height: 300px;
+  flex-wrap: wrap;
+  gap: 10;
+}
+
+.sample6_4 .flexBox{
+  padding: 20px;
+  font-size: 1.6em;
+  display: flex;
+  width: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  
+}
+.sample6_4 .flexBox:first-child{
+  flex-grow: 1;
+}
+.sample6_4 .flexBox:last-child{
+  order: -1;
+}
+
+.s6_5{
+  height: 800px;
+}
+.s6_5 .flexBoxWrap{
+  border: solid 2px tomato;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s6_5 .flexBox{
+
+}

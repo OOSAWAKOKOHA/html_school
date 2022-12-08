@@ -81,3 +81,12 @@ header{
   border: solid 1px #fff;
 }
 
+.btnBase a:link,
+.btnBase a:visited{
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 45px;
+}
+
+.btnLink
